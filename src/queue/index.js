@@ -59,9 +59,9 @@ let messaging = {
 					}
 
 					ch.assertQueue(channel, {durable: true});
-					// ch.sendToQueue(channel, new Buffer(message + ""), {persistent: true}, () => {
-					//	   resolve();
-					// });
+					ch.sendToQueue(channel, new Buffer(message + ""), {persistent: true}, () => {
+						resolve();
+					});
 				});
 			}
 		});
