@@ -1,6 +1,6 @@
 {
   "name": "workerjs-rabbitmq",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "rabbitmq wrapper for WorkerJS",
   "main": "index.js",
   "dependencies": {
