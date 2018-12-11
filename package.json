@@ -1,8 +1,21 @@
 {
   "name": "workerjs-rabbitmq",
-  "version": "1.0.0",
+  "version": "0.0.0",
+  "description": "rabbitmq wrapper for WorkerJS",
+  "main": "index.js",
   "dependencies": {
     "amqplib": "^0.5.3",
     "events": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workerJS/workerjs-rabbitmq.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/workerJS/workerjs-rabbitmq/issues"
+  },
+  "homepage": "https://github.com/workerJS/workerjs-rabbitmq#readme"
+}
 }
