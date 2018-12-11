@@ -32,9 +32,9 @@ let messaging = {
 
 								ch.consume(q.queue, function (message) {
 									messaging._eventEmitter.emit(channel, JSON.parse(message.content));
+								}, null, () => {
+									resolve(messaging._eventEmitter.on(channel, listener));
 								});
-
-								resolve(messaging._eventEmitter.on(channel, listener));
 							}
 						});
 					}

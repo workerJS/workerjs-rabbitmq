@@ -31,9 +31,9 @@ let messaging = {
 							let secs = message.content.toString().split(".").length - 1;
 
 							ch.ack(message);
+						}, null, () => {
+							resolve(messaging._eventEmitter.on(channel, listener));
 						});
-
-						resolve(messaging._eventEmitter.on(channel, listener));
 					}
 				});
 			} else {
