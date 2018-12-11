@@ -30,9 +30,7 @@ let messaging = {
 
 							let secs = message.content.toString().split(".").length - 1;
 
-							setTimeout(function () {
-								ch.ack(message);
-							}, secs * 1000);
+							ch.ack(message);
 						});
 
 						resolve(messaging._eventEmitter.on(channel, listener));
