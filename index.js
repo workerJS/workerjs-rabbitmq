@@ -9,11 +9,11 @@ const rabbitmq = {
 };
 
 module.exports = function(options){
-	if(redis.messaging == undefined){
+	if(rabbitmq.messaging == undefined){
 		rabbitmq.queue = queue(options);
 		rabbitmq.messaging = messaging(options);
 	}
 
-	return redis;
-}
+	return rabbitmq;
+};
 
