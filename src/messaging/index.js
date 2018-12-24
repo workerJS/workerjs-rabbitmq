@@ -69,7 +69,7 @@ let messaging = {
 	}
 };
 
-module.exports = function () {
+module.exports = (options) => {
 	return new Promise((resolve, reject) => {
 		if (messaging._client == undefined) {
 			amqp.connect("amqp://localhost", function (err, conn) {
