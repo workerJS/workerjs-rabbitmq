@@ -6,3 +6,9 @@
 
 * [ ] Make sure chans are properly closed
 
+* [ ] Move away from singelton pattern to factory patern
+
+* [ ] Add queue example
+
+* [ ] Make messaging and queue independant
+
